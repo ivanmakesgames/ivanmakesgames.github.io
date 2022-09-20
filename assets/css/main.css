@@ -110,7 +110,7 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
+		border-bottom: none;
 		color: #49bf9d;
 		text-decoration: none;
 	}
@@ -3222,7 +3222,7 @@ input, select, textarea {
 
 	:root {
 		--primary: #ffffff;
-		--primary-gradient: linear-gradient(45deg, #c297df 0%, #f3f3c7 100%);
+		--primary-gradient: linear-gradient(45deg, #d7df97 0%, #7e7e7e 100%);
 	  }
 	  .section-header {
 		text-align: center;
