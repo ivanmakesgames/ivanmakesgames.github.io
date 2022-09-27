@@ -1794,6 +1794,11 @@ input, select, textarea {
 		font-size: 2em;
 	}
 
+	header.majorprojects h2 {
+		text-align: center;
+		font-size: 2.5em;
+	}
+
 /* Form */
 
 	form {
