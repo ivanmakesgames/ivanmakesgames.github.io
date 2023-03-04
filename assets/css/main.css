@@ -2545,6 +2545,29 @@ input, select, textarea {
 				border-color: #3eb08f;
 			}
 
+		/* Contact Me Button*/
+		input[type="button"].secondary,
+		.button.secondary {
+			background-color: rgba(255, 255, 255, 0.197);
+			border-color: rgba(255, 255, 255, 0.5);
+			color: rgba(255, 255, 255, 0.5) !important;
+		}
+
+			input[type="button"].secondary:hover,
+			.button.secondary:hover {
+				background-color: #5cc6a7;
+				border-color: #5cc6a7;
+				color: #ffffff !important;
+
+			}
+
+			input[type="button"].secondary:active,
+			.button.secondary:active {
+				background-color: #3eb08f;
+				border-color: #3eb08f;
+			}
+		/* End */
+
 		input[type="submit"].disabled, input[type="submit"]:disabled,
 		input[type="reset"].disabled,
 		input[type="reset"]:disabled,
@@ -2635,7 +2658,7 @@ input, select, textarea {
 		}
 
 		#header h2, #header h3, #header h4, #header h5, #header h6 {
-			color: #ffffff;
+			color:rgba(255, 255, 255, 0.5);;
 		}
 
 		#header h1 {
