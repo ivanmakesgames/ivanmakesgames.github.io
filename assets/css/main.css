@@ -3341,3 +3341,55 @@ input, select, textarea {
   .text-container {
 	margin-left: 20px;
   }
+
+  /*Accordion*/
+  .accordion-icon {
+	display: inline-block;
+	margin-right: 10px;
+	transform: rotate(90deg);
+	transition: transform 0.3s ease;
+  }
+  
+  .accordion-header.active .accordion-icon {
+	transform: rotate(0);
+  }
+  
+  .accordion-header:hover .accordion-icon {
+	color: #f90; /* change the color to your preferred highlight color */
+  }
+  
+  .accordion-item {
+	border: 1px solid #ddd;
+	margin-bottom: 10px;
+  }
+  
+  .accordion-header {
+	padding: 10px;
+	background-color: #eee;
+	cursor: pointer;
+  }
+  
+  .accordion-content {
+	padding: 10px;
+	display: none;
+  }
+  
+  ::selection {
+	background-color: transparent;
+  }
+
+  #typing-effect #typing-text {
+	overflow: hidden; /* hide text overflow */
+	white-space: nowrap; /* prevent line breaks */
+	animation: typing-effect 3s steps(30, end) forwards;
+  }
+  
+  /* typing animation */
+  @keyframes typing-effect {
+	from {
+	  width: 0;
+	}
+	to {
+	  width: 100%;
+	}
+  }
