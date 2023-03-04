@@ -3332,3 +3332,12 @@ input, select, textarea {
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.flex-container {
+	display: flex;
+	align-items: center;
+  }
+  
+  .text-container {
+	margin-left: 20px;
+  }

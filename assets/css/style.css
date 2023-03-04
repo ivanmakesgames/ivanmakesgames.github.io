@@ -213,3 +213,73 @@ article img {
     padding: 0 80px;
   }
 }
+
+/* Image fit */
+.image.fit {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.image.fit img {
+  display: block;
+  width: 100%;
+}
+
+/* Image overlay */
+.image-overlay {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.image-overlay img {
+  display: block;
+  width: 100%;
+}
+
+.image-overlay .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0,0,0,0.5);
+  transition: opacity 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.image-overlay:hover .overlay {
+  opacity: 1;
+}
+
+/* Button */
+.button {
+  -moz-transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+  border-radius: 0.35em;
+  border: solid 3px rgba(255, 255, 255, 0.5);
+  color: #fff;
+  content: 'View';
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: 400;
+  left: 50%;
+  line-height: 2.25em;
+  margin: -1.25em 0 0 -3em;
+  opacity: 0;
+  padding: 0 1.5em;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 50%;
+  white-space: nowrap;
+  z-index: 2;
+}
+
+.image-overlay:hover .button {
+  opacity: 1;
+}
