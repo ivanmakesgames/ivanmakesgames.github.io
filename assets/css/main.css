@@ -3378,7 +3378,7 @@ input, select, textarea {
   }
   
   .accordion-header:hover .accordion-icon {
-	color: #f90; /* change the color to your preferred highlight color */
+	color: rgb(52, 50, 50); /* change the color to your preferred highlight color */
   }
   
   .accordion-item {
