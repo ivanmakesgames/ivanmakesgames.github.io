@@ -3370,7 +3370,8 @@ input, select, textarea {
 	display: inline-block;
 	margin-right: 10px;
 	transform: rotate(0);
-	transition: transform 0.3s ease;
+	transition: transform 0.35s ease;
+	font-size: 1.1em
   }
   
   .accordion-header.active .accordion-icon {
