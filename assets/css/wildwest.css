@@ -3369,12 +3369,12 @@ input, select, textarea {
   .accordion-icon {
 	display: inline-block;
 	margin-right: 10px;
-	transform: rotate(90deg);
+	transform: rotate(0);
 	transition: transform 0.3s ease;
   }
   
   .accordion-header.active .accordion-icon {
-	transform: rotate(0);
+	transform: rotate(90deg);
   }
   
   .accordion-header:hover .accordion-icon {
