@@ -2452,10 +2452,11 @@ input, select, textarea {
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 0.35em;
-		border: solid 3px #efefef;
+		border: solid 1px #efefef;
 		color: #787878 !important;
 		cursor: pointer;
 		display: inline-block;
+		border-color: #cecece;
 		font-weight: 400;
 		height: 3.15em;
 		height: calc(2.75em + 6px);
@@ -2563,6 +2564,26 @@ input, select, textarea {
 
 			input[type="button"].secondary:active,
 			.button.secondary:active {
+				background-color: #3eb08f;
+				border-color: #3eb08f;
+			}
+		/* End */
+		/* Read Button*/
+		input[type="button"].other,
+		.button.other {
+			background-color: #eee;
+			border-color: #5cc6a7;
+		}
+
+			input[type="button"].other:hover,
+			.button.other:hover {
+				background-color: #5cc6a7;
+				border-color: #5cc6a7;
+
+			}
+
+			input[type="button"].other:active,
+			.button.other:active {
 				background-color: #3eb08f;
 				border-color: #3eb08f;
 			}
