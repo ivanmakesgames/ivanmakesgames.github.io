@@ -3415,3 +3415,74 @@ input, select, textarea {
 	  width: 100%;
 	}
   }
+  
+
+  /*Overlay Tic-Tae-Toe*/
+  #overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.9);
+	z-index: 9999;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #overlay table {
+	border-collapse: collapse;
+	width: 300px;
+	height: 300px;
+  }
+  
+  #overlay td {
+	border: 1px solid white;
+	width: 100px;
+	height: 100px;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	cursor: pointer;
+  }
+  
+  #overlay td:hover {
+	background-color: #444;
+  }
+  
+  #overlay td:active {
+	background-color: #666;
+  }
+  
+  #overlay td.x:before {
+	content: 'X';
+  }
+  
+  #overlay td.o:before {
+	content: 'O';
+  }
+  
+  #overlay .message {
+	margin-top: 20px;
+	font-size: 24px;
+	color: white;
+	text-align: center;
+  }
+  
+  #overlay .btn {
+	display: block;
+	margin-top: 20px;
+	padding: 10px 20px;
+	background-color: white;
+	color: black;
+	border: none;
+	border-radius: 4px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+  }
+  
+  #overlay .btn:hover {
+	background-color: #ccc;
+  }
