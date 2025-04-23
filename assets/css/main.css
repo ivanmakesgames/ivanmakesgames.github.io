@@ -3581,6 +3581,30 @@ input, select, textarea {
 	background-color: #23D3FB;
 	animation: squidge-4 var(--duration) ease-in-out infinite alternate;
 }
+.box-letter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(180deg);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	pointer-events: none;
+	user-select: none;
+	z-index: 10;
+}
+.box-letter-main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	pointer-events: none;
+	user-select: none;
+	z-index: 10;
+}
 
 @keyframes slide {
 	0% { transform: translateX(0vw); }
