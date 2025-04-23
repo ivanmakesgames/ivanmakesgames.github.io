@@ -15,7 +15,15 @@
 	</head>
 
 	<body class="is-preload">
-	
+		<div class="loader">
+			<div class="container loading-animation">
+				<div class="📦"></div>
+				<div class="📦"></div>
+				<div class="📦"></div>
+				<div class="📦"></div>
+				<div class="📦"></div>
+			</div>
+		</div>
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
@@ -125,5 +133,14 @@
 		<script src="assets/js/util.js"></script>
 		<script src="assets/js/main.js"></script>
 
+
+		<script>
+			window.addEventListener("load", () => {
+				const loader = document.querySelector(".loader");
+				if (loader) {
+					loader.style.display = "none";
+				}
+			});
+		</script>
 </body>
 </html>
