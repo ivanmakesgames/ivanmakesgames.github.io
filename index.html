@@ -137,9 +137,12 @@
 		<script>
 			window.addEventListener("load", () => {
 				const loader = document.querySelector(".loader");
-				if (loader) {
-					loader.style.display = "none";
-				}
+				setTimeout(() => {
+					if (loader) {
+						loader.classList.add("hidden");
+						setTimeout(() => loader.remove(), 500); // remove it after fade-out
+					}
+				}, 2000);
 			});
 		</script>
 </body>
