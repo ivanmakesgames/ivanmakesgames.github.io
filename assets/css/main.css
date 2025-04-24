@@ -97,7 +97,7 @@ input, select, textarea {
 		} */
 
 	body, input, select, textarea {
-		color: #a2a2a2;
+		color: #696969;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 400;
@@ -3510,7 +3510,7 @@ input, select, textarea {
 	align-items: center;
 	z-index: 9999;
 	opacity: 1;
-	transition: opacity 0.5s ease;
+	transition: opacity 1.0s ease;
 }
 
 .loader.hidden {
@@ -3544,7 +3544,8 @@ input, select, textarea {
 	right: 0;
 	background-color: lightblue;
 	border-radius: var(--box-border-radius);
-	box-shadow: 0px 0px 10px 0px rgba(28, 159, 255, 0.4);
+	/* box-shadow: 0px 0px 10px 0px rgba(28, 159, 255, 0.4); */
+	box-shadow: 0px 0px 10px 0px rgba(162, 89, 255, 0.4); /* matching #A259FF */
 }
 
 .loading-animation .📦:nth-child(1) {
@@ -3557,28 +3558,32 @@ input, select, textarea {
 	animation: flip-1 var(--duration) ease-in-out infinite alternate;
 }
 .loading-animation .📦:nth-child(2):after {
-	background-color: #1C9FFF;
+	background-color: #A259FF;
+	/* background-color: #1C9FFF; */
 	animation: squidge-1 var(--duration) ease-in-out infinite alternate;
 }
 .loading-animation .📦:nth-child(3) {
 	animation: flip-2 var(--duration) ease-in-out infinite alternate;
 }
 .loading-animation .📦:nth-child(3):after {
-	background-color: #1FB1FD;
+	background-color: #C084FC;
+	/* background-color: #1FB1FD; */
 	animation: squidge-2 var(--duration) ease-in-out infinite alternate;
 }
 .loading-animation .📦:nth-child(4) {
 	animation: flip-3 var(--duration) ease-in-out infinite alternate;
 }
 .loading-animation .📦:nth-child(4):after {
-	background-color: #22C7FB;
+	background-color: #D8B4FE;
+	/* background-color: #22C7FB; */
 	animation: squidge-3 var(--duration) ease-in-out infinite alternate;
 }
 .loading-animation .📦:nth-child(5) {
 	animation: flip-4 var(--duration) ease-in-out infinite alternate;
 }
 .loading-animation .📦:nth-child(5):after {
-	background-color: #23D3FB;
+	background-color: #dfc4fc;
+	/* background-color: #23D3FB; */
 	animation: squidge-4 var(--duration) ease-in-out infinite alternate;
 }
 .box-letter {
@@ -3606,13 +3611,23 @@ input, select, textarea {
 	z-index: 10;
 }
 
-@keyframes slide {
+/* @keyframes slide {
 	0% { transform: translateX(0vw); }
 	100% { transform: translateX(calc(var(--container-size) - (var(--box-size) * 1.25))); }
-}
-@keyframes color-change {
+} */
+/* @keyframes color-change {
 	0% { background-color: #1795FF; }
 	100% { background-color: #23D3FB; }
+} */
+
+@keyframes slide {
+	0% { background-color: #A259FF; transform: translateX(0vw); }
+	100% { background-color: #F3E8FF; transform: translateX(calc(var(--container-size) - (var(--box-size) * 1.25))); }
+}
+
+@keyframes color-change {
+	0% { background-color: #A259FF; }
+	100% { background-color: #F3E8FF; }
 }
 
 @keyframes flip-1 { 0%, 15% { transform: rotate(0); } 35%, 100% { transform: rotate(-180deg); } }
